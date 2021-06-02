@@ -14,7 +14,7 @@ if ($_POST) {
     
 
 
-    $q = mysqli_query ( $connection, "insert into tbl_student(st_name, st_gender, st_dob, st_email, st_address, st_passwd, st_area, st_pincode, st_bloodgrp) values('{$name}','{$gender}','{$dob}','{$email}','{$mobile}','{$address}','{$passwd}','{$area}','{$pincode}','{$bloodgrp}')") or die(mysqli_error($connection));
+    $q = mysqli_query ( $connection, "insert into tbl_student(st_id, st_name, st_gender, st_dob, st_email, st_address, st_passwd, st_area, st_pincode, st_bloodgrp) values('{$name}','{$gender}','{$dob}','{$email}','{$mobile}','{$address}','{$passwd}','{$area}','{$pincode}','{$bloodgrp}')") or die(mysqli_error($connection));
     if($q) {
           echo "<script>alert('Record Added')</script>";
     }
